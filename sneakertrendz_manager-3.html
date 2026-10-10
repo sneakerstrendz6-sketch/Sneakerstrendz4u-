@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>SneakerTrendz | Premium Sneakers</title>
+<style>
+:root{--bg:#050505;--panel:#111;--line:#292929;--text:#f7f7f7;--muted:#b7b7b7;--green:#08c765}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#080808f5;border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-size:24px;font-weight:900;font-style:italic}.brand small{display:block;font-size:9px;font-style:normal;letter-spacing:4px;text-align:center;color:#ccc;margin-top:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:25px;background:var(--green);color:#fff;font-weight:800;padding:12px 18px;cursor:pointer}.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;padding:45px 0}.eyebrow{color:#b9d9e8;letter-spacing:2px;font-size:12px;text-transform:uppercase}h1{font-size:clamp(40px,6vw,68px);line-height:1;margin:15px 0;letter-spacing:-2px}.hero p{line-height:1.7;color:#ddd}.hero-art{height:320px;border-radius:15px;display:grid;place-items:center;background:radial-gradient(ellipse,#292929,#050505 72%);overflow:hidden}.hero-art img{height:100%;width:100%;object-fit:contain}.perks{display:flex;gap:15px;flex-wrap:wrap;color:#ddd;font-size:13px;margin:22px 0}
+.categories{display:grid;grid-template-columns:repeat(5,1fr);border-block:1px solid var(--line);padding:15px 0}.categories a{text-align:center;padding:8px;color:#ddd;font-size:13px;border-right:1px solid var(--line)}.categories a:last-child{border:0}
+.section-head{text-align:center;padding:38px 0 20px}.section-head h2{margin:0 0 8px}.section-head p{color:var(--muted);font-size:14px}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;padding-bottom:38px}.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b0b0b}.photo{height:200px;background:#090909}.photo img{height:100%;width:100%;object-fit:contain}.details{padding:13px}.tag{display:inline-block;background:#292929;border-radius:20px;padding:5px 8px;font-size:10px;color:#ddd;margin-bottom:9px}.details h3{font-size:15px;line-height:1.4;margin:0 0 8px}.price{font-size:20px;font-weight:800;margin:0 0 12px}.size-label{font-size:12px;color:#ccc;margin-bottom:8px}.sizes{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:13px}.size{border:1px solid #555;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;font-size:11px}.card .btn{width:100%;border-radius:8px;padding:11px 7px;font-size:12px}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:23px 0;border-block:1px solid var(--line);text-align:center;font-size:13px}.benefits span{display:block;color:var(--muted);font-size:12px;margin-top:5px}footer{padding:24px 0;color:#aaa;font-size:12px}.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.note{text-align:center;color:#777;font-size:11px;line-height:1.5}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:30px 0}.hero-art{height:250px}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.photo{height:165px}.benefits{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.nav{min-height:64px}.brand{font-size:20px}.nav>.btn{font-size:11px;padding:10px}.categories{grid-template-columns:repeat(3,1fr)}.categories a{border:0;border-bottom:1px solid var(--line)}.products{gap:9px}.photo{height:135px}.details{padding:9px}.details h3{font-size:13px}.price{font-size:18px}.size{width:23px;height:23px}.card .btn{font-size:10px;padding:10px 4px}.foot{justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">SneakerTrendz<small>PREMIUM SNEAKERS</small></a>
+<a class="btn wa-link" href="#" target="_blank" rel="noopener">☏ Order on WhatsApp</a>
+</div></header>
+<main>
+<section class="wrap hero" id="home"><div>
+<div class="eyebrow">Step up your style</div><h1>SneakerTrendz</h1>
+<p>Find your next favourite pair. Explore our sneaker styles, check sizes and message us directly on WhatsApp to order.</p>
+<div class="perks"><span>✓ Fresh styles</span><span>✓ Multiple sizes</span><span>✓ WhatsApp enquiries</span></div>
+<a class="btn wa-link" href="#" target="_blank" rel="noopener">☏ &nbsp; Order on WhatsApp &nbsp; →</a>
+</div><div class="hero-art"><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=85" alt="Featured sneakers"></div></section>
+<nav class="wrap categories"><a href="#collection">High Tops</a><a href="#collection">Low Tops</a><a href="#collection">Running</a><a href="#collection">Basketball</a><a href="#collection">More Styles</a></nav>
+<section class="wrap" id="collection"><div class="section-head"><h2>Our Latest Collection</h2><p>Trending styles | Check sizes | Order directly</p></div><div id="products" class="products"></div></section>
+<section class="wrap benefits"><div><strong>👟 Sneaker Styles</strong><span>Explore the collection</span></div><div><strong>📦 Delivery Enquiry</strong><span>Ask us on WhatsApp</span></div><div><strong>↔ Size Assistance</strong><span>Confirm size before ordering</span></div><div><strong>☏ Direct Support</strong><span>Chat with us on WhatsApp</span></div></section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home">SneakerTrendz<small>PREMIUM SNEAKERS</small></a><span>© <span id="year"></span> SneakerTrendz</span><a class="wa-link" href="#" target="_blank" rel="noopener">Contact on WhatsApp</a></div><p class="note wrap">Product photos, prices and sizes are managed in this browser. To make changes appear on your published website or another device, you must publish an updated website or connect a shared online database.</p></footer>
+
+<dialog id="manager">
+<form id="productForm" method="dialog">
+<div class="manager-head"><h2 id="formTitle">Add a sneaker</h2><button type="button" class="close" id="closeManager" aria-label="Close">✕</button></div>
+<label>Product name<input id="pName" required maxlength="80" placeholder="e.g. White Classic Sneakers"></label>
+<label>Price in ₹<input id="pPrice" required type="number" min="1" step="1" placeholder="1299"></label>
+<label>Photo: choose from your device<input id="pPhoto" type="file" accept="image/*"></label>
+<div id="photoHint">Choose a photo. Images are saved in this browser on this device.</div>
+<label>Photo URL (optional)<input id="pUrl" type="url" placeholder="https://..."></label>
+<label>Sizes (comma separated)<input id="pSizes" placeholder="6, 7, 8, 9, 10, 11"></label>
+<label>Label (optional)<input id="pTag" maxlength="30" placeholder="BEST SELLER"></label>
+<div class="form-actions"><button type="button" class="secondary" id="cancelForm">Cancel</button><button class="btn" type="submit">Save product</button></div>
+</form>
+</dialog>
+<button id="adminToggle" type="button" title="Open product manager">⚙ Manage Products</button>
+<div id="toast" role="status" aria-live="polite"></div>
+<style>
+#adminToggle{position:fixed;right:16px;bottom:16px;z-index:8;background:#f2f2f2;color:#111;border:1px solid #777;border-radius:28px;padding:12px 16px;font-weight:800;box-shadow:0 5px 25px #0009;cursor:pointer}
+dialog{width:min(480px,94vw);max-height:90vh;overflow:auto;border:1px solid #444;border-radius:15px;background:#111;color:#fff;padding:0}
+dialog::backdrop{background:#000b;backdrop-filter:blur(3px)}
+#productForm{padding:20px;display:grid;gap:13px}.manager-head{display:flex;justify-content:space-between;align-items:center}.manager-head h2{font-size:21px;margin:0}.close{background:#292929;color:white;border:0;border-radius:8px;padding:8px 11px;cursor:pointer}
+#productForm label{display:grid;gap:6px;font-size:13px;color:#ddd}#productForm input{width:100%;min-width:0;background:#080808;color:#fff;border:1px solid #444;border-radius:8px;padding:11px;font:inherit}#productForm input[type=file]{font-size:12px}#photoHint{font-size:11px;color:#aaa;line-height:1.4}.form-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:5px}.secondary{background:#292929;color:white;border:1px solid #555;border-radius:25px;padding:11px 16px;cursor:pointer}.manager-help{font-size:12px;color:#bbb;line-height:1.5;margin:0 0 10px}.manager-list{display:grid;gap:8px}.manager-item{display:flex;align-items:center;gap:9px;padding:9px;border:1px solid #333;border-radius:9px}.manager-item img{width:48px;height:48px;object-fit:contain;background:#080808;border-radius:6px}.manager-item .info{flex:1;min-width:0;font-size:12px}.manager-item .info strong{display:block;overflow-wrap:anywhere}.manager-item button{border:1px solid #555;border-radius:7px;background:#222;color:#fff;padding:7px;cursor:pointer}.manager-item button.delete{color:#ffaaaa}.manager-actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}.manager-actions button{font-size:12px}#toast{position:fixed;bottom:72px;right:16px;z-index:20;background:#222;color:#fff;padding:12px 15px;border-radius:10px;max-width:90vw;display:none;font-size:13px;box-shadow:0 5px 25px #0009}
+</style>
+<script>
+const WHATSAPP_NUMBER = "916351107759";
+const STORAGE_KEY = "sneakertrendz-products-v1";
+const DB_NAME = "SneakerTrendzDB";
+const STORE_NAME = "images";
+const defaultProducts = [
+ {id:"p1",name:"White Classic Sneakers",price:1299,photo:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=85",sizes:"6, 7, 8, 9, 10, 11",tag:"BEST SELLER"},
+ {id:"p2",name:"Black Street Sneakers",price:1499,photo:"https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=85",sizes:"6, 7, 8, 9, 10, 11",tag:"TRENDING"},
+ {id:"p3",name:"Casual Everyday Sneakers",price:1599,photo:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=85",sizes:"6, 7, 8, 9, 10, 11",tag:"EVERYDAY STYLE"},
+ {id:"p4",name:"Sport Edition Sneakers",price:1799,photo:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85",sizes:"6, 7, 8, 9, 10, 11",tag:"SPORTY LOOK"}
+];
+let products = loadProducts();
+let editingId = null;
+let imageDbPromise;
+function loadProducts(){try{const data=JSON.parse(localStorage.getItem(STORAGE_KEY));return Array.isArray(data)?data:defaultProducts.map(p=>({...p}));}catch{return defaultProducts.map(p=>({...p}));}}
+function saveProducts(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(products));return true;}catch(e){toast("Browser storage is full. Try a smaller photo or photo URL.");return false;}}
+function waLink(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);}
+function safeText(s){return String(s??"");}
+function escapeHTML(s){return safeText(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function renderProducts(){
+ const root=document.getElementById("products");
+ if(!products.length){root.innerHTML="<p>No products yet. Tap Manage Products to add your first sneaker.</p>";return;}
+ root.innerHTML=products.map(p=>`<article class="card">
+ <div class="photo"><img src="${escapeHTML(p.photo||"")}" alt="${escapeHTML(p.name)}" loading="lazy" onerror="this.style.opacity='.25'"></div>
+ <div class="details">${p.tag?`<span class="tag">${escapeHTML(p.tag)}</span>`:""}<h3>${escapeHTML(p.name)}</h3>
+ <p class="price">₹ ${Number(p.price).toLocaleString("en-IN")}</p><div class="size-label">Available sizes</div>
+ <div class="sizes">${safeText(p.sizes).split(",").map(s=>s.trim()).filter(Boolean).map(s=>`<span class="size">${escapeHTML(s)}</span>`).join("")}</div>
+ <a class="btn" href="${waLink("Hi SneakerTrendz! I am interested in "+p.name+" (listed price: Rs. "+p.price+"). Please confirm availability and sizes.")}" target="_blank" rel="noopener">☏ Order on WhatsApp</a>
+ </div></article>`).join("");
+}
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.style.display="block";clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.style.display="none",3500);}
+document.querySelectorAll(".wa-link").forEach(a=>a.href=waLink("Hi SneakerTrendz! I want to know more about your sneakers."));
+document.getElementById("year").textContent=new Date().getFullYear();
+
+const manager=document.getElementById("manager");
+const form=document.getElementById("productForm");
+const $=id=>document.getElementById(id);
+function openManager(){renderManager();manager.showModal();}
+function renderManager(){
+ const old=$("managerList");if(old)old.remove();
+ const list=document.createElement("div");list.id="managerList";list.className="manager-list";
+ list.innerHTML=products.map(p=>`<div class="manager-item"><img src="${escapeHTML(p.photo||"")}" alt=""><div class="info"><strong>${escapeHTML(p.name)}</strong>₹ ${Number(p.price).toLocaleString("en-IN")}</div><button type="button" data-edit="${escapeHTML(p.id)}">Edit</button><button type="button" class="delete" data-delete="${escapeHTML(p.id)}">Delete</button></div>`).join("")||"<p>No products yet. Add one below.</p>";
+ const help=document.createElement("p");help.className="manager-help";help.textContent="Manage products in this browser. Changes are saved on this device only; publishing changes to your public website needs an online shared system or re-publishing.";
+ const actions=document.createElement("div");actions.className="manager-actions";
+ actions.innerHTML='<button type="button" class="btn" id="addProduct">＋ Add product</button><button type="button" class="secondary" id="exportProducts">Export backup</button><button type="button" class="secondary" id="importProducts">Import backup</button><input id="backupFile" type="file" accept="application/json" hidden>';
+ form.insertBefore(help,form.querySelector("label"));form.insertBefore(actions,form.querySelector("label"));form.insertBefore(list,form.querySelector("label"));
+ $("addProduct").onclick=()=>resetForm();
+ $("exportProducts").onclick=exportBackup;
+ $("importProducts").onclick=()=>$("backupFile").click();
+ $("backupFile").onchange=importBackup;
+ list.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>editProduct(b.dataset.edit));
+ list.querySelectorAll("[data-delete]").forEach(b=>b.onclick=()=>deleteProduct(b.dataset.delete));
+}
+function cleanManager(){["managerList"].forEach(id=>$(id)?.remove());form.querySelectorAll(".manager-help,.manager-actions").forEach(el=>el.remove());}
+function resetForm(){editingId=null;form.reset();$("formTitle").textContent="Add a sneaker";$("pPhoto").required=false;$("photoHint").textContent="Choose a photo from your device, or enter a photo URL below."; }
+function editProduct(id){const p=products.find(x=>x.id===id);if(!p)return;editingId=id;$("formTitle").textContent="Edit sneaker";$("pName").value=p.name;$("pPrice").value=p.price;$("pUrl").value=p.photo||"";$("pSizes").value=p.sizes||"";$("pTag").value=p.tag||"";$("pPhoto").value="";$("photoHint").textContent="Current photo stays unless you choose a new photo or enter a new URL.";window.scrollTo(0,0);}
+function deleteProduct(id){const p=products.find(x=>x.id===id);if(!p||!confirm("Delete "+p.name+"?"))return;products=products.filter(x=>x.id!==id);if(saveProducts()){renderProducts();renderManager();toast("Product deleted.");}}
+function openImageDB(){
+ if(imageDbPromise)return imageDbPromise;
+ imageDbPromise=new Promise((resolve,reject)=>{if(!("indexedDB" in window)){reject(new Error("Image storage is not supported in this browser."));return;}const req=indexedDB.open(DB_NAME,1);req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains(STORE_NAME))req.result.createObjectStore(STORE_NAME);};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});
+ return imageDbPromise;
+}
+async function saveImage(file,id){
+ const db=await openImageDB();
+ return new Promise((resolve,reject)=>{const tx=db.transaction(STORE_NAME,"readwrite");tx.objectStore(STORE_NAME).put(file,id);tx.oncomplete=()=>resolve("indexeddb:"+id);tx.onerror=()=>reject(tx.error);});
+}
+async function getImage(id){
+ try{const db=await openImageDB();return await new Promise((resolve,reject)=>{const tx=db.transaction(STORE_NAME,"readonly");const req=tx.objectStore(STORE_NAME).get(id);req.onsuccess=()=>resolve(req.result||null);req.onerror=()=>reject(req.error);});}catch{return null;}
+}
+async function resolveLocalImages(){
+ for(const p of products){if(typeof p.photo==="string"&&p.photo.startsWith("indexeddb:")){const blob=await getImage(p.photo.slice(9));if(blob)p.photo=URL.createObjectURL(blob);}}
+ renderProducts();
+}
+form.addEventListener("submit",async e=>{
+ e.preventDefault();
+ const name=$("pName").value.trim(),price=Number($("pPrice").value),file=$("pPhoto").files[0],url=$("pUrl").value.trim();
+ if(!name||!Number.isFinite(price)||price<1){toast("Enter a product name and valid price.");return;}
+ if(!editingId&&!file&&!url){toast("Choose a photo or enter a photo URL.");return;}
+ const id=editingId||("p"+Date.now());
+ let photo=editingId?(products.find(p=>p.id===editingId)?.photo||""): "";
+ try{
+  if(file){const blobKey="image-"+id;await saveImage(file,blobKey);photo="indexeddb:"+blobKey;}
+  else if(url)photo=url;
+ }catch(err){toast("Photo could not be saved. Try a photo URL instead.");return;}
+ if(photo.startsWith("indexeddb:")){const blob=await getImage(photo.slice(9));if(blob)photo=URL.createObjectURL(blob);}
+ const product={id,name,price,photo,sizes:$("pSizes").value.trim()||"Please ask for sizes",tag:$("pTag").value.trim()};
+ if(editingId)products=products.map(p=>p.id===editingId?product:p);else products.push(product);
+ if(saveProducts()){renderProducts();renderManager();resetForm();toast("Saved on this device. Online visitors won't see changes until you update the published site or connect a shared database.");}
+});
+function exportBackup(){
+ const data=products.map(p=>({...p,photo:(p.photo||"").startsWith("blob:")?"":p.photo}));
+ const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="sneakertrendz-products-backup.json";a.click();URL.revokeObjectURL(a.href);toast("Backup downloaded. Device photos may need to be selected again after importing.");
+}
+function importBackup(){
+ const input=$("backupFile");input.onchange=async()=>{const file=input.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!Array.isArray(data)||data.some(p=>!p.name||!p.price)){throw new Error("Invalid file");}products=data.map((p,i)=>({...p,id:String(p.id||("import"+i))}));if(saveProducts()){renderProducts();renderManager();toast("Backup imported.");}}catch{toast("Could not import that backup file.");}input.value="";};
+}
+$("adminToggle").addEventListener("click",openManager);
+$("closeManager").addEventListener("click",()=>{cleanManager();manager.close();});
+$("cancelForm").addEventListener("click",()=>{resetForm();});
+manager.addEventListener("close",cleanManager);
+renderProducts();
+resolveLocalImages();
+</script>
+</body>
+</html>
